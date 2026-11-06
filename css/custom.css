@@ -1,0 +1,355 @@
+/* INFO1005 Website Design — Module 2.3 completed Bart Simpson example */
+
+:root {
+  --brand-primary: #243b50;
+  --brand-secondary: #a9c1cf;
+  --brand-dark: #41484e;
+  --brand-light: #f5f0e7;
+  --brand-panel: #f5f0e7;
+  --brand-muted: #d8d2c7;
+  --brand-border: #d8d2c7;
+  --brand-accent: #c69b55;
+  --heading-font: 'Playfair Display', Georgia, serif;
+  --body-font: 'Inter', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #f5f0e7;
+  background-image: none;
+  color: #243b50;
+  margin: 0;
+}
+
+body {
+font-family: var(--body-font);
+background-color: var(--brand-secondary);
+color: var(--brand-dark);
+margin: 0;
+
+background-image:
+radial-gradient(
+circle at 10% 15%,
+rgba(254, 251, 250, 0.13),
+transparent 35%
+),
+radial-gradient(
+circle at 90% 80%,
+rgba(46, 7, 30, 0.12),
+transparent 40%
+),
+repeating-linear-gradient(
+135deg,
+transparent 0px,
+transparent 48px,
+rgba(254, 251, 250, 0.035) 49px,
+transparent 50px
+);
+
+background-attachment: fixed;
+}
+
+.content-card,
+.content-panel {
+  background-color: #f5f0e7;
+  color: #243b50;
+  border: 1px solid #D8D2CC;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(46, 7, 30, 0.06);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  color: #243b50;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-item h4 {
+  color: #c69b55;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.timeline-item {
+  margin-bottom: 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 4px solid #a9c1cf;
+}
+
+.content-card p,
+.content-panel p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #383b3d;
+}
+
+p {
+color: #3e373a;
+line-height: 1.7;
+}
+
+a {
+color: var(--brand-secondary);
+}
+
+button {
+background-color: var(--brand-primary);
+color: var(--brand-light);
+border-radius: 25px;
+border: none;
+}
+
+button:hover {
+background-color: var(--brand-secondary);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  color: var(--brand-primary);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-style: italic;
+  line-height: .95;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--brand-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--brand-dark);
+  font-size: 1.35rem;
+}
+
+h4 {
+  color: var(--brand-muted);
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.navbar {
+  background-color: #243b50;
+  padding: 1rem 0;
+}
+
+.navbar .nav-link {
+  color: #f5f0e7;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  color: #a9c1cf;
+}
+
+.btn-primary {
+  background-color: #243b50;
+  border: 2px solid #243b50;
+  color: #FFFFFF;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c69b55;
+  border-color: #c69b55;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid #c69b55;
+  outline-offset: 3px;
+}
+
+.brand-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: .5rem;
+  border: 3px solid var(--brand-secondary);
+}
+
+.hero {
+background-image:
+linear-gradient(120deg, rgba(46, 7, 30, 0.25), rgba(168, 181, 170, 0.8)),
+url('../img/background1.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 5rem 0;
+}
+
+.eyebrow {
+  color: var(--brand-primary);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.site-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-panel {
+  background-color: var(--brand-panel);
+  border: 2px solid var(--brand-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item {
+  border-left: 6px solid var(--brand-primary);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  font-weight: 700;
+}
+
+.office { background-color: var(--brand-secondary); }
+.adobe { background-color: #c69b55; }
+.communication { background-color: #d7b988; }
+.floorplans {background-color:#cae3ef}
+
+.carousel-img {
+  height: 360px;
+  object-fit: cover;
+  filter: brightness(.75);
+}
+
+.carousel-caption {
+  background-color: rgba(164, 235, 255, 0.20);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #ffffff;
+}
+
+.portfolio-card {
+  border: 2px solid var(--brand-border);
+  overflow: hidden;
+}
+
+.portfolio-card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.custom-btn,
+.custom-btn-secondary {
+  border: 2px solid var(--brand-primary);
+  font-weight: 700;
+}
+
+.custom-btn {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+}
+
+.custom-btn-secondary {
+  background-color: #ffffff;
+  color: var(--brand-primary);
+}
+
+.custom-btn:hover,
+.custom-btn-secondary:hover {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+  color: #ffffff;
+}
+
+.accordion-button {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--brand-secondary);
+  color: var(--brand-dark);
+}
+
+.site-footer {
+  background-color: var(--brand-primary);
+  color: #f5f0e7;
+  padding: 2rem 0;
+}
+
+.h6 {
+  color: #f5f0e7;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-portrait {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .carousel-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-panel {
+    padding: 1rem;
+  }
+
+  .carousel-caption {
+    position: static;
+    border-radius: 0;
+  }
+}

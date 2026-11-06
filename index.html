@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- INFO1005 Website Design — Module 2.3 completed Bart Simpson example -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kiara Edmunds Interactive Resume and Portfolio">
+  <meta name="author" content="INFO1005 Website Design">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS comes AFTER Bootstrap -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <title>Kiara Edmunds' Interactive Resume and Portfolio</title>
+</head>
+
+<body>
+
+  <!-- MODULE 2.2 REVIEW — already complete -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        <img class="brand-img" src="img/logo12.jpeg" alt="Female worker logo"> 
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#portfolioNavbar"
+              aria-controls="portfolioNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="portfolioNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf/KiaraEdmunds-Resume2026.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow">Interactive Resume and Portfolio</p>
+          <h1>Kiara Edmunds</h1>
+          <p class="lead-intro">I am a motivated university student seeking an opportunity to enter the construction industry and gain hands-on experience.</p>
+          <a class="btn custom-btn" href="pdf/KiaraEdmunds-Resume2026.pdf" target="_blank">Open Resume</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container site-content">
+    <div class="row g-4">
+
+      <aside class="col-12 col-lg-4">
+        <section id="about" class="content-panel">
+          <h2>About Me</h2>
+          <img class="img-fluid profile-img" src="img/workeronsite.jpg" alt="Worker on site">
+          <p>I am looking for the chance to grow within the industry and build my skills in developing floorplans, 3D building models and applying my industry knowledge into real-world situations in the workplace.</p>
+        </section>
+
+        <section id="skills" class="content-panel">
+          <h2>Skillset</h2>
+
+          <div class="skill-item">
+            <p>Microsoft Office and Google Workspace</p>
+            <div class="progress" role="progressbar" aria-label="Microsoft Office and Google Workspace skill" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar office" style="width: 95%">95%</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>Adobe Illustrator and Photoshop</p>
+            <div class="progress" role="progressbar" aria-label="Adobe Illustrator and Photoshop skill" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar adobe" style="width: 87%">87%</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>Communication and Public Speaking</p>
+            <div class="progress" role="progressbar" aria-label="Communication and Public Speaking skill" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar communication" style="width: 79%">79%</div>
+            </div>
+            </div>
+
+            <div class="skill-item">
+            <p>Developing Floorplans and 3D Models</p>
+            <div class="progress" role="progressbar" aria-label="Developing Floorplans and 3D Models skill" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar floorplans" style="width: 64%">64%</div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="col-12 col-lg-8">
+
+        <section id="experience" class="content-panel">
+          <h2>Education and Qualifications</h2>
+          <div class="timeline-item">
+            <h3>Higher School Certificate</h3>
+            <h4>Cranebrook High School - 2025</h4>
+            <p>Remained in a selective class throughout school and consistently achieved high results, evident through awards and medals.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Diploma in Building Design and Construction</h3>
+            <h4>Western Sydney University, Kingswood - Present</h4>
+            <p>Maintained a GPA of 6.6 to 7 throughout the year. Refined my skills in drawing floor plans and was introduced to what operations are involved in the construction industry.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Certificate III in Design Fundamentals - Interior Design</h3>
+            <h4>Whitehouse Institute of Design, Surry Hills - 2025</h4>
+            <p>Discovered how to develop floor and elevation plans. Moreover, how to turn them into 3D models in Sketchup and rendered in Enscape.</p>
+          </div>
+           <div class="timeline-item">
+            <h3>Certificate I in Hospitality - Barista and Kitchen Skills</h3>
+            <h4>TAFE, Nepean Kingswood - 2023</h4>
+            <p>Was able to apply new-found knowledge from this course into my current position as a Front of House member. Such as, tuning the coffee machine and Food Safety processes.</p>
+          </div>
+        </section>
+
+        
+        <section id="projects" class="content-panel">
+          <h2>Portfolio Highlights</h2>
+          <p>Below, consists of a collection of snapshots from a final project I completed in my Interior Design certificate. It demonstrates my ability to create an original 3D model in Sketchup and transform it into a designed project in Enscape.</p>
+
+          <div id="projectCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="img/portfolioone.jpg" class="d-block w-100 carousel-img" alt="Gelato bar signage">
+                <div class="carousel-caption">
+                  <h3>Business Identity</h3>
+                  <p>Transformed the Japanese restaurant, Tento, into a warm and holiday-like feel for an Italian cafe.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/portfoliotwo.jpg" class="d-block w-100 carousel-img" alt="Top view of gelato bar">
+                <div class="carousel-caption">
+                  <h3>Rendering with Enscape</h3>
+                  <p>Used Enscape to create natural lighting and form shadows, to bring the project to life.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/portfoliothree.jpg" class="d-block w-100 carousel-img" alt="People enjoying a drink">
+                <div class="carousel-caption">
+                  <h3>Cohesiveness</h3>
+                  <p>Created a colour and material palette that is not only visually consistent but aesthetic aswell.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        
+        <section id="portfolio" class="content-panel">
+          <h2>Snippets of Projects</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/formsfromnature.jpg" class="card-img-top" alt="Sustainable flower lamp">
+                <div class="card-body">
+                  <h3 class="card-title">Forms From Nature</h3>
+                  <p>To resemble a hibiscus flower and demonstrates my approach to a sustainable future.</p>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModal1">Read Brief</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/projectporfoliolayout.jpg" class="card-img-top" alt="Central Perk project">
+                <div class="card-body">
+                  <h3 class="card-title">IKEA Display Bedroom</h3>
+                  <p>Underscores how I am able to construct client ideas into a finished product.</p>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModal2">Read Brief</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/finalprojectfloorplan.jpg" class="card-img-top" alt="Drawn Floorplan">
+                <div class="card-body">
+                  <h3 class="card-title">Final Project Floorplan</h3>
+                  <p>Representation of how determined I am for a high-quality outcome in my work.</p>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModal3">Read Brief</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="evidence" class="content-panel">
+          <h2>Previous Employment</h2>
+          <p>Although I have had not had the opportunity to work in the construction industry, I am currently employed as a Front of House Member at Soul Origin Penrith since 2022. Below, consists of skills I have developed that could be transferred into future job positions.</p>
+
+          <div class="accordion" id="evidenceAccordion">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                  Supporting into Making Sales
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                 Assisted customers with product information and recommendations based on their preferred tastes.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                  Quick Decision-Making 
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  Worked efficiently in a fast-paced environment whilst maintaining accuracy.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                  Leadership
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+               Trained and supported new staff by guiding them through daily operations.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="projectModal1"
+     tabindex="-1"
+     role="region"
+     aria-labelledby="projectModal1Label"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="projectModal1Label">
+          Forms From Nature - Project Brief
+        </h2>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Was tasked with using recycled materials to
+          create a usable and sustainable bedside lamp.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projectModal2"
+     tabindex="-1"
+     role="region"
+     aria-labelledby="projectModal2Label"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="projectModal2Label">
+          IKEA Display Bedroom - Project Brief
+        </h2>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          To develop a new line of IKEA furniture,
+          alongside a display bedroom.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projectModal3"
+     tabindex="-1"
+     role="region"
+     aria-labelledby="projectModal3Label"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="projectModal3Label">
+          Final Project Floorplan - Project Brief
+        </h2>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          A project focused on redesigning a space
+          for the Tento restaurant in Surry Hills.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h6>Kiara Edmunds' Interactive Resume and Portfolio — INFO1005 Assessment Three</h6>
+    </div>
+  </footer>
+<!-- Bootstrap JavaScript powers navbar, carousel, modal and accordion. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
